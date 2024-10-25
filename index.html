@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+   <h1 id="head1">PASSWORD GENERATOR</h1>
+
+   <div class="display-container">
+
+    <input type="text" name="" id="inputbar" >
+
+    <button id="copybutton"  >COPY</button>
+</div>
+
+
+    <div class="slidecontainer">
+
+        <div class="password-length"><h3>Password Length :</h3>
+            <p id="para">10</p>
+        </div>
+        
+        <input  type="range" min="1" max="20"  class="slider"  step="1" value="12" data-lengthSlider >
+      </div>
+
+      <div class="password-types">
+
+      <div class="check-box"><input type="checkbox" name="" id="upper" checked >
+      <label for="">Include Uppercase Letters</label></div>
+
+
+<div class="check-box"><input type="checkbox" name="" id="lower" checked>
+      <label for="">Include Lowercase Letters</label></div>
+
+
+      <div class="check-box"><input type="checkbox" name="" id="number" checked>
+      <label for="">Include Numbers</label></div>
+
+
+      <div class="check-box" ><input type="checkbox" name="" id="symbol" checked>
+      <label for="">Include Symbols</label></div>
+
+    </div>
+
+
+    <div class="display-Strength">
+
+        <h2>Strength :</h2>
+        <div class="showcolur" id="changethis" ></div>
+
+    </div>
+   
+    <div class="generate-password">
+        <button id="password-btn">GENERATE PASSWORD</button>
+    </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
