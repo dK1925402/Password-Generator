@@ -1,144 +1,163 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-
-body{
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
- 
-   
     background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#head1{
+#head1 {
     color: black;
     text-shadow: 0px 4px 3px rgb(251, 251, 251),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+                 0px 8px 13px rgba(0, 0, 0, 0.1),
+                 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
-.container{
+.container {
     border: 2px solid black;
- 
     padding: 40px;
-    background-color: rgb(218, 216, 230);
+    background-color: rgba(221, 214, 214, 0.856);
     box-shadow: 18px 18px;
     border-radius: 25px;
-
-    background-color: rgba(221, 214, 214, 0.856);
-    
+    max-width: 100%;
 }
-.display-container{
+
+.display-container {
     display: flex;
-  
     justify-content: space-evenly;
-    align-items: center; 
-margin: 15px;
-}
-
-
-
-.slidecontainer{
+    align-items: center;
     margin: 15px;
-    
 }
 
-.password-length{
+.slidecontainer {
+    margin: 15px;
+}
+
+.password-length {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
 }
 
-.slider{
-    width: 350px;
+.slider {
+    width: 100%;
+    max-width: 350px;
     height: 30px;
 }
 
-.password-types{
+.password-types {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    /* align-items: center;  */
     margin: 15px;
     font-size: 20px;
-   
 }
 
-input[type="checkbox"]{
-cursor: pointer;
-
+input[type="checkbox"] {
+    cursor: pointer;
 }
 
-
-.display-Strength{
-
+.display-Strength {
     margin: 20px;
     display: flex;
- 
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     padding: 0px 20px;
-   
-
 }
 
-#inputbar{
+#inputbar {
     padding: 5px;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     font-size: 20px;
     border: 2px solid black;
     border-radius: 5px;
-
 }
 
-.generate-password{
+.generate-password {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center;  */
     margin: 15px;
 }
 
-button{
+button {
     padding: 10px;
     background-color: black;
     color: white;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bolder;
-  
 }
 
 input[type="checkbox"] {
-    width:20px ;
-    height:20px  ;
+    width: 20px;
+    height: 20px;
     accent-color: green;
-
-  }
-  
-
-.showcolur{
-    height:25px;
-    width :25px;
-    border-radius: 50%;
-background-color: green;
-    border: 1px solid rgb(159, 159, 159);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
 }
 
-.check-box{
-display: flex;
-align-items: center;
-gap: 10px;
-margin: 2px;
+.showcolur {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: green;
+    border: 1px solid rgb(159, 159, 159);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.check-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 2px;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 8px 8px;
+    }
+
+    .password-length,
+    .password-types,
+    .display-Strength {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 16px;
+    }
+
+    .display-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    #inputbar {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .showcolur {
+        height: 20px;
+        width: 20px;
+    }
 }
